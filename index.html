@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Elmarasy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=20250130">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Ahmed Elmarasy</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I am <span class="highlight">Ahmed Elmarasy</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Mechatronics Engineering Student | AI & Data Science Enthusiast
+                </p>
+                <p class="hero-description">
+                    Final-year Mechatronics Engineering student at Benha University with a passion for 
+                    Artificial Intelligence, Data Science, and Robotics.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="profile-image.jpg" alt="Ahmed Elmarasy" id="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i class="fas fa-user-circle" id="default-icon" style="display: none;"></i>
+                    </div>
+                    <h3>Ahmed Elmarasy</h3>
+                    <p>Mechatronics Engineer & AI & Machine Learning and Data Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am Ahmed Safwat, a final-year student in the Mechatronics Engineering Department at the Faculty of Engineering – Banha University, expected to graduate in 2026. Throughout my studies, I have built a solid foundation in mechanical design, industrial robotics, and mechanical vibrations, and have worked on several practical projects in these areas.
+                    </p>
+                    <p>
+                        Driven by a growing passion for artificial intelligence, I began developing my skills through several specialized training programs.
+                        I started with an Internet of Things (IoT) course at the National Telecommunications Institute (ITI),
+                        followed by an intensive two-month training program in Artificial Intelligence and Machine Learning by Microsoft in collaboration with Sprints. During this program, I developed a heart disease prediction application, which was published on GitHub, and I received a certificate of successful completion.
+                    </p>
+                    <p>
+                        I also joined another two-month training program with the National Telecommunications Institute (NTI) in Machine Learning and Data Analysis, during which I developed a project to predict whether a newborn would require admission to the neonatal intensive care unit (NICU). This project was also published on GitHub.
+                    </p>
+                    <p>
+                        I aim to integrate my engineering background with AI technologies to develop innovative, data-driven solutions that address real-world challenges.
+                    </p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Benha University</h4>
+                        <p>Faculty of Engineering, Mechatronics Engineering</p>
+                        <span class="year">2020 - 2026</span>
+                    </div>
+                    <div class="education-details">
+                        <h4>Advanced Coursework:</h4>
+                        <ul>
+                            <li>Mechanical Design</li>
+                            <li>Industrial Robots</li>
+                            <li>Mechanical Vibrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Microsoft & Sprints Projects -->
+                <div class="project-card microsoft-project">
+                    <div class="project-header">
+                        <h3>Heart Disease Prediction App</h3>
+                        <span class="project-type">Microsoft & Sprints</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/heart-disease-app.jpg" alt="Heart Disease Prediction App" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        Microsoft Training Project - A web application for predicting heart disease using machine learning algorithms. 
+                        The application was developed using Streamlit and Python with medical data analysis.
+                    </p>
+                    <div class="project-details">
+                        <h4>Project Details:</h4>
+                        <ul>
+                            <li>Analysis of patient medical data</li>
+                            <li>Development of machine learning prediction model</li>
+                            <li>Interactive user interface using Streamlit</li>
+                            <li>Model accuracy analysis and performance evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Healthcare AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ahmedselmarasy-maker/HeartDisease-Prediction" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NTI Training Projects -->
+                <div class="project-card nti-project">
+                    <div class="project-header">
+                        <h3>Neonatal Incubator Admission Prediction</h3>
+                        <span class="project-type">NTI Training</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/neonatal-prediction.jpg" alt="Neonatal Incubator Prediction" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        NTI Training Project - Machine learning model for predicting neonatal incubator admission requirements. 
+                        The model was developed using advanced data analysis techniques.
+                    </p>
+                    <div class="project-details">
+                        <h4>Project Details:</h4>
+                        <ul>
+                            <li>Analysis of neonatal data</li>
+                            <li>Development of advanced predictive model</li>
+                            <li>Analysis of factors affecting incubator needs</li>
+                            <li>Model accuracy evaluation and performance optimization</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Healthcare AI</span>
+                        <span class="tech-tag">Predictive Modeling</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ITI IoT Projects -->
+                <div class="project-card iti-iot-project">
+                    <div class="project-header">
+                        <h3>IoT Smart Systems</h3>
+                        <span class="project-type">ITI IoT</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/smart-parking.jpg" alt="IoT Smart Systems" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        Comprehensive IoT solutions including Smart Parking System and Baby Movement Monitoring System - 
+                        demonstrating practical applications of IoT technologies for real-world challenges.
+                    </p>
+                    <div class="project-details">
+                        <h4>Smart Parking System:</h4>
+                        <ul>
+                            <li>Car detection sensors (Ultrasonic Sensors)</li>
+                            <li>Database management system</li>
+                            <li>Interactive web interface for parking status</li>
+                            <li>Real-time notification system for users</li>
+                            <li>Data analysis and usage statistics</li>
+                        </ul>
+                        <h4>Baby Movement Monitoring System:</h4>
+                        <ul>
+                            <li>Advanced motion sensors (Motion Sensors)</li>
+                            <li>Smart alert system (Smart Alerts)</li>
+                            <li>Mobile app for baby monitoring</li>
+                            <li>Data logging and analysis system</li>
+                            <li>Web interface for parents</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Sensors</span>
+                        <span class="tech-tag">Web Interface</span>
+                        <span class="tech-tag">Database</span>
+                        <span class="tech-tag">Mobile App</span>
+                        <span class="tech-tag">Real-time Monitoring</span>
+                    </div>
+                </div>
+
+                <!-- Engineering Projects -->
+                <div class="project-card engineering-project">
+                    <div class="project-header">
+                        <h3>6DOF Robot Arm Design</h3>
+                        <span class="project-type">Engineering</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/robot-arm-design.jpg" alt="6DOF Robot Arm Design" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        Kinematic modeling and simulation of a 6-degree-of-freedom robotic arm with comprehensive mechanical design.
+                    </p>
+                    <div class="project-details">
+                        <h4>Project Details:</h4>
+                        <ul>
+                            <li>Forward and inverse kinematics analysis</li>
+                            <li>MATLAB simulation and modeling</li>
+                            <li>Mechanical design and optimization</li>
+                            <li>Control system implementation</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Simulink</span>
+                        <span class="tech-tag">Robotics</span>
+                        <span class="tech-tag">Kinematics</span>
+                    </div>
+                </div>
+
+                <div class="project-card engineering-project">
+                    <div class="project-header">
+                        <h3>Elevator System Design</h3>
+                        <span class="project-type">Engineering</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/elevator-system.jpg" alt="Elevator System Design" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        Complete elevator system design project including mechanical components, control systems, and safety mechanisms.
+                    </p>
+                    <div class="project-details">
+                        <h4>System Components:</h4>
+                        <ul>
+                            <li>Mechanical drive system design</li>
+                            <li>Safety brake mechanisms</li>
+                            <li>Control panel and interface</li>
+                            <li>Load capacity calculations</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Mechanical Design</span>
+                        <span class="tech-tag">Control Systems</span>
+                        <span class="tech-tag">Safety Engineering</span>
+                    </div>
+                </div>
+
+                <div class="project-card engineering-project">
+                    <div class="project-header">
+                        <h3>Mechanical Vibrations Analysis</h3>
+                        <span class="project-type">Engineering</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="project-images/mechanical-vibrations.jpg" alt="Mechanical Vibrations Analysis" onerror="this.style.display='none';">
+                    </div>
+                    <p class="project-description">
+                        Analysis of Single Degree of Freedom (SDOF) mechanical vibration systems with mathematical modeling and simulation.
+                    </p>
+                    <div class="project-details">
+                        <h4>Analysis Components:</h4>
+                        <ul>
+                            <li>Mathematical modeling of SDOF systems</li>
+                            <li>Frequency response analysis</li>
+                            <li>Damping coefficient calculations</li>
+                            <li>MATLAB simulation and visualization</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Vibrations</span>
+                        <span class="tech-tag">Mathematical Modeling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Training Section -->
+    <section class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Training</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card iti-microsoft-certificate">
+                    <div class="certificate-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft & Sprints</h3>
+                    <p>AI & Machine Learning</p>
+                    <span class="certificate-duration">2 months</span>
+                    <div class="certificate-image">
+                        <img src="certificates/microsoft-certificate.jpg" alt="Microsoft Certificate" onerror="this.style.display='none';">
+                    </div>
+                    <div class="certificate-details">
+                        <h4>Training Projects:</h4>
+                        <p>Heart Disease Prediction App</p>
+                        <ul>
+                            <li>Medical data analysis</li>
+                            <li>Machine learning model development</li>
+                            <li>Interactive user interface</li>
+                        </ul>
+                        <p>Smart Parking System</p>
+                        <ul>
+                            <li>Car detection sensors</li>
+                            <li>Interactive web interface</li>
+                            <li>Database management system</li>
+                        </ul>
+                        <p>Baby Movement Monitoring System</p>
+                        <ul>
+                            <li>Advanced motion sensors</li>
+                            <li>Mobile monitoring app</li>
+                            <li>Smart alert system</li>
+                        </ul>
+                        <h4>Skills Covered:</h4>
+                        <ul>
+                            <li>Machine Learning Fundamentals</li>
+                            <li>Data Analysis and Visualization</li>
+                            <li>AI Model Development</li>
+                            <li>Cloud Computing Integration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="certificate-card industry-certificate">
+                    <div class="certificate-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Summer Training</h3>
+                    <p>Textile Factory</p>
+                    <span class="certificate-duration">1 month</span>
+                    <div class="certificate-image">
+                        <img src="certificates/summer-training.jpg" alt="Summer Training Certificate" onerror="this.style.display='none';">
+                    </div>
+                    <div class="certificate-details">
+                        <h4>Areas:</h4>
+                        <ul>
+                            <li>Production and Manufacturing</li>
+                            <li>Quality Control</li>
+                            <li>Occupational Safety</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Engineering</h3>
+                    <ul>
+                        <li>Mechanical Design</li>
+                        <li>Industrial Robots</li>
+                        <li>Mechanical Vibrations</li>
+                        <li>Mechatronics Systems</li>
+                        <li>Robotics</li>
+                        <li>Embedded Systems</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Machine Learning</li>
+                        <li>Data Analysis</li>
+                        <li>MATLAB</li>
+                        <li>Simulink</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <ul>
+                        <li>GitHub</li>
+                        <li>Microsoft Azure</li>
+                        <li>Jupyter Notebook</li>
+                        <li>MATLAB</li>
+                        <li>Simulink</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Research</li>
+                        <li>Presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 155 393 7300</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Giza, Egypt</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ahmed-s-elmarasy" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ahmedselmarasy-maker" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ahmed.s.elmarasy@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ahmed Elmarasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
