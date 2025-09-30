@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* ensure no horizontal scroll on mobile */
 }
 
 body {
@@ -115,6 +116,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    overflow-x: hidden; /* avoid grid overflow on small screens */
 }
 
 .hero-title {
@@ -379,11 +381,12 @@ section {
 /* Projects Section */
 .projects {
     background: #f8fafc;
+    overflow-x: hidden; /* safety for wide cards */
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -884,14 +887,17 @@ section {
 
     .projects-grid {
         grid-template-columns: 1fr;
+        padding: 0 12px; /* add side padding to avoid edge overflow */
     }
 
     .skills-grid {
         grid-template-columns: 1fr;
+        padding: 0 12px;
     }
 
     .certificates-grid {
         grid-template-columns: 1fr;
+        padding: 0 12px;
     }
 }
 
