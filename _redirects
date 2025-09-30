@@ -1,0 +1,12 @@
+# Netlify redirects file
+# Ensure all static assets are served correctly
+
+# Handle missing favicon
+/favicon.ico /favicon.ico 200
+
+# Handle image paths
+/project-images/* /project-images/:splat 200
+/certificates/* /certificates/:splat 200
+
+# Handle any missing assets
+/* /index.html 200

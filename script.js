@@ -88,21 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Form submission handling
-const contactForm = document.querySelector('.contact-form form');
+// Form submission handling with Formspree
+const contactForm = document.querySelector('form[action*="formspree"]');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const name = formData.get('name') || contactForm.querySelector('input[type="text"]').value;
-        const email = formData.get('email') || contactForm.querySelector('input[type="email"]').value;
-        const subject = formData.get('subject') || contactForm.querySelector('input[placeholder="Subject"]').value;
-        const message = formData.get('message') || contactForm.querySelector('textarea').value;
+        // Get form data for validation
+        const name = contactForm.querySelector('input[name="name"]').value;
+        const email = contactForm.querySelector('input[name="email"]').value;
+        const subject = contactForm.querySelector('input[name="subject"]').value;
+        const message = contactForm.querySelector('textarea[name="message"]').value;
         
         // Simple validation
         if (!name || !email || !subject || !message) {
+            e.preventDefault();
             alert('Please fill in all fields');
             return;
         }
@@ -110,23 +108,19 @@ if (contactForm) {
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
+            e.preventDefault();
             alert('Please enter a valid email address');
             return;
         }
         
-        // Simulate form submission
+        // Show loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        setTimeout(() => {
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            contactForm.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 2000);
+        // Let the form submit to Formspree
+        // Formspree will handle the submission and redirect
     });
 }
 
