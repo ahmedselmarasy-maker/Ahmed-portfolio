@@ -998,23 +998,41 @@ html {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: rgba(0,0,0,0.35); /* more transparent */
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.22));
     color: #fff;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 50;
-    transition: background 0.2s ease, transform 0.15s ease;
-    backdrop-filter: blur(4px);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    border: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
 }
 
 .img-zoom-icon:hover {
-    background: rgba(0,0,0,0.55);
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.24);
+}
+
+.img-zoom-icon:active {
+    transform: translateY(-1px) scale(0.99);
+}
+
+.img-zoom-icon:focus {
+    outline: 3px solid rgba(251,191,36,0.18);
+    outline-offset: 2px;
+}
+
+.img-zoom-icon svg {
+    width: 18px;
+    height: 18px;
+    display: block;
 }
 
 .image-lightbox {
