@@ -252,6 +252,71 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
+// Lightbox / Image zoom functionality
+document.addEventListener('DOMContentLoaded', () => {
+    // Create lightbox container
+    const lightbox = document.createElement('div');
+    lightbox.className = 'image-lightbox';
+    lightbox.innerHTML = `
+        <button class="lb-close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <img src="" alt="" />
+    `;
+    document.body.appendChild(lightbox);
+
+    const lbImg = lightbox.querySelector('img');
+    const lbClose = lightbox.querySelector('.lb-close');
+
+    function openLightbox(src, alt) {
+        lbImg.src = src;
+        lbImg.alt = alt || '';
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        lbImg.src = '';
+        document.body.style.overflow = '';
+    }
+
+    lbClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Attach zoom icon to all images inside project, certificate, and project-image containers
+    const imageSelectors = 'img';
+    document.querySelectorAll(imageSelectors).forEach(img => {
+        // Skip if image is decorative or profile icon
+        if (img.closest('.profile-image')) return;
+        if (img.closest('.back-to-top')) return;
+
+        // Wrap image with container if not already wrapped
+        if (!img.parentElement.classList.contains('img-zoom-wrap')) {
+            const wrapper = document.createElement('span');
+            wrapper.className = 'img-zoom-wrap';
+            img.parentNode.insertBefore(wrapper, img);
+            wrapper.appendChild(img);
+
+            const icon = document.createElement('button');
+            icon.className = 'img-zoom-icon';
+            icon.innerHTML = '<i class="fas fa-expand"></i>';
+            icon.setAttribute('aria-label', 'View image');
+            wrapper.appendChild(icon);
+
+            icon.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openLightbox(img.src, img.alt);
+            });
+
+            img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        }
+    });
+});
+
 // Add loading styles
 const loadingStyle = document.createElement('style');
 loadingStyle.textContent = `
