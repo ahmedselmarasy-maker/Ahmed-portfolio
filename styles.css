@@ -698,6 +698,11 @@ section {
     transition: transform 0.3s ease;
 }
 
+/* Larger IoT certificate image */
+.iti-iot-certificate .certificate-image img {
+    height: 320px; /* larger display for IoT certificate */
+}
+
 .certificate-image img:hover {
     transform: scale(1.05);
 }
