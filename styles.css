@@ -998,7 +998,7 @@ html {
     position: absolute;
     top: 8px;
     right: 8px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.35); /* more transparent */
     color: #fff;
     width: 36px;
     height: 36px;
@@ -1009,10 +1009,11 @@ html {
     cursor: pointer;
     z-index: 50;
     transition: background 0.2s ease, transform 0.15s ease;
+    backdrop-filter: blur(4px);
 }
 
 .img-zoom-icon:hover {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.55);
     transform: translateY(-2px);
 }
 
