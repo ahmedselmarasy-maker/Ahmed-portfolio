@@ -424,10 +424,6 @@ section {
     border-left-color: #000000;
 }
 
-.client-project {
-    border-left-color: #3b82f6;
-}
-
 .project-header {
     display: flex;
     justify-content: space-between;
@@ -484,11 +480,6 @@ section {
 .engineering-project .project-type {
     background: #f3f3f3;
     color: #000000;
-}
-
-.client-project .project-type {
-    background: #dbeafe;
-    color: #1e40af;
 }
 
 .project-description {
@@ -567,11 +558,6 @@ section {
 
 .project-link:hover {
     color: #333333;
-}
-
-/* Client Projects Section */
-.client-projects {
-    background: white;
 }
 
 /* Certificates Section */
