@@ -712,9 +712,14 @@ section {
     transition: transform 0.3s ease;
 }
 
-/* Larger IoT certificate image */
-.iti-iot-certificate .certificate-image img {
-    height: 320px; /* larger display for IoT certificate */
+/* Keep old certificates consistent with new simple cards */
+.ml-data-analysis-certificate .certificate-image img,
+.generative-ai-certificate .certificate-image img,
+.iti-iot-certificate .certificate-image img,
+.iti-microsoft-certificate .certificate-image img {
+    height: 200px;
+    object-fit: cover;
+    background: transparent;
 }
 
 .certificate-image img:hover {
